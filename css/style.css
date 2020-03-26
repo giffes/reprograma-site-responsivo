@@ -2,6 +2,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+html {
+    font-size: 10px;
+}
+
 .header { /*engloba a imagem e a nav*/
     padding: 40px 130px;
     background: url(../images/header.png) no-repeat center center / cover;
@@ -42,7 +46,7 @@ body {
 
 .text { /* engloba o title h1 e o subtitle p */
     color: #FFF;
-    width: 400px;
+    max-width: 400px;
     margin-top: auto;
 }
 
@@ -52,7 +56,7 @@ body {
 
 .text__subtitle { /* é irmão do text__title */
     font-size: 24px;
-    width: 400px;
+    max-width: 400px;
     margin-bottom: 34px; /* adiciona margem abaixo do elemento subtitulo */
 }
 
@@ -92,3 +96,22 @@ body {
     margin: 42px 120px;
 }
 
+.nav__menu-btn {
+    display: none;
+}
+
+button {
+    font-size: 1.6rem;
+}
+@media screen and (max-width: 860px) {
+
+    .nav__menu-btn {
+        display: block;
+       
+    }
+
+   
+    .nav {
+    display: none;
+  }
+}   
